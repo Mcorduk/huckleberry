@@ -1,3 +1,22 @@
+/* Color palette
+
+Primary (green):
+
+    hsl(160deg, 100%, 30%)
+
+Secondary (gold):
+
+    hsl(45deg, 100%, 50%) (lighter)
+    hsl(45deg, 100%, 40%) (darker)
+
+Grays:
+
+    hsl(0deg, 0%, 0%) (black)
+    hsl(0deg, 0%, 10%) (very dark)
+    hsl(0deg, 0%, 30%) (dark)
+    hsl(0deg, 0%, 40%) (medium)
+    hsl(0deg, 0%, 60%) (light)
+    hsl(0deg, 0%, 100%) (white) */
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
@@ -10,3 +29,39 @@ body {
 }
 
 /* Add styles here! */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+main {
+  background-color: hsl(0deg, 0%, 40%) ;
+  padding: 30px;
+}
+
+.max-width-wrapper {
+  margin-right: auto; /* 1 */
+  margin-left:  auto; /* 1 */
+  max-width: 500px; 
+  padding-right: 10px; /* 3 */
+  padding-left:  10px /* 3 */
+}
+/* Bottom Half */
+.card {
+  background-color: white;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.indented-heading {
+  width: max-content;
+  background-color: hsl(45deg, 100%, 50%);
+  border-bottom: 5px solid hsl(45deg, 100%, 40%);
+  margin-left: -10px;
+  margin-top: 0px;
+  padding: 20px;
+}
